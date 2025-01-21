@@ -20,3 +20,9 @@ header {
     display: flex;
     flex-direction: column;
 }
+
+header .titulo {
+    margin-top: 40px;
+    text-align: center;
+    text-shadow: 0 0 50px black;
+}
