@@ -15,3 +15,8 @@ body {
     background-position: 70%;
     height: 100vh;
 }
+
+header {
+    display: flex;
+    flex-direction: column;
+}
