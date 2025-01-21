@@ -59,3 +59,23 @@ main .informacion {
     padding: 20px;
     text-align: center;
 }
+
+#ciudad {
+    text-align: center;
+}
+
+.nombre-ciudad {
+    font-size: 23px;
+    margin: 20px 0;
+}
+
+.deg-tiempo {
+    font-size: 80px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.condicion-tiempo {
+    margin-bottom: 20px;
+}
+
