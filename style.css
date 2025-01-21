@@ -1,0 +1,17 @@
+@impport url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Funnel, sans-serif;
+    background-image: url("IMAGENES/montana-de-nieve-ydg6x966wun8nkjs.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70%;
+    height: 100vh;
+}
