@@ -41,4 +41,11 @@ function fetchDataFromApi() {
     humedadCiudad.innerHTML = `humidity: ${data.main.humidity}%`;
     fechadeHoy.innerHTML = getDate();
  }
- 
+
+ let meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+
+ function getDate(){
+    let nuevaFecha = new Date();
+    let meses = months[nuevaFecha.getMonth()];
+    return `${nuevaFecha.getDate()} ${meses} ${nuevaFecha.getFullYear()}`;
+ }
