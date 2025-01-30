@@ -28,4 +28,17 @@ function fetchDataFromApi() {
     .then((res) => res.json())
     .then((data) => addDataToDom(data));
 }
+ let nombreCiudad = document.querySelector(".city-name");
+ let temperaturaCiudad = document.querySelector(".weather-deg");
+ let condicionCiudad = document.querySelector(".weather-condition");
+ let humedadCiudad = document.querySelector(".humidity");
+ let fechadeHoy = document.querySelector(".date");
+
+ function addDataToDom(data) {
+    nombreCiudad.innerHTML = `${data.name}, ${data.sys.country}`;
+    temperaturaCiudad.innerHTML = `${Math.round(data.main.temp - 273.15)}ºc`;
+    condicionCiudad.innerHTML = data.weather[0].description;
+    humedadCiudad.innerHTML = `humidity: ${data.main.humidity}%`;
+    fechadeHoy.innerHTML = getDate();
+ }
  
