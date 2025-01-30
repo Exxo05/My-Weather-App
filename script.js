@@ -1,12 +1,12 @@
-let logotitulo = document.querySelector(".titulo");
-let elementoCuerpo = document.querySelector("cuerpo");
+let logotitulo = document.querySelector(".title");
+let elementoCuerpo = document.querySelector("body");
 
 window.addEventListener("load", () => {
     let numeroRandom = Math.ceil(Math.random() * 5)
-    bodyElem.style.backgroundImage = `url(IMAGENES/bg${numeroRandom}.jpng)`;
+    bodyElem.style.backgroundImage = `url('IMAGENES/bg${numeroRandom}.jpg')`;
 });
 
-let putCiudad = document.querySelector("get-city");
+let putCiudad = document.querySelector("#get-city");
 putCiudad.addEventListener("keypress", (event) => {
     if (event.key == "Enter") {
         fetchDataFromApi();
@@ -14,7 +14,7 @@ putCiudad.addEventListener("keypress", (event) => {
 });
 
 let datosAPI = {
-    url: "http://api.openweathermap.org/data/2.5/forecast?q=",
+    url: "http://api.openweathermap.org/data/2.5/weather?q=",
     key: "7ea15b5ede189da436e9374f884ca5b7",
 };
 
