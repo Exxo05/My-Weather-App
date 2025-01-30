@@ -4,6 +4,9 @@ let elementoCuerpo = document.querySelector("body");
 window.addEventListener("load", () => {
     let numeroRandom = Math.ceil(Math.random() * 5)
     bodyElem.style.backgroundImage = `url('IMAGENES/bg${numeroRandom}.jpg')`;
+    if (numeroRandom == 3 || numeroRandom == 4 || numeroRandom == 5) {
+        logotitulo.style.color = "white";
+    }
 });
 
 let putCiudad = document.querySelector("#ciudad");
