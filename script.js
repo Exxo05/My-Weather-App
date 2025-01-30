@@ -6,7 +6,7 @@ window.addEventListener("load", () => {
     bodyElem.style.backgroundImage = `url('IMAGENES/bg${numeroRandom}.jpg')`;
 });
 
-let putCiudad = document.querySelector("#get-city");
+let putCiudad = document.querySelector("#ciudad");
 putCiudad.addEventListener("keypress", (event) => {
     if (event.key == "Enter") {
         fetchDataFromApi();
