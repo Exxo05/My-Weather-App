@@ -1,4 +1,4 @@
-let logotitulo = document.querySelector(".title");
+let logotitulo = document.querySelector(".titulo");
 let elementoCuerpo = document.querySelector("body");
 
 window.addEventListener("load", () => {
@@ -26,16 +26,16 @@ fetchDataFromApi();
 putCiudad.value = "";
 
 function fetchDataFromApi() {
-    let ciudadSelecionada = putCiudad.value;
-    fetch((`${datosAPI.url}${ciudadSelecionada}&&appid=${datosAPI.key}`))
+    let ciudadSeleccionada = putCiudad.value;
+    fetch((`${datosAPI.url}${ciudadSeleccionada}&appid=${datosAPI.key}`))
     .then((res) => res.json())
     .then((data) => addDataToDom(data));
 }
- let nombreCiudad = document.querySelector(".city-name");
- let temperaturaCiudad = document.querySelector(".weather-deg");
- let condicionCiudad = document.querySelector(".weather-condition");
- let humedadCiudad = document.querySelector(".humidity");
- let fechadeHoy = document.querySelector(".date");
+ let nombreCiudad = document.querySelector(".nombre-ciudad");
+ let temperaturaCiudad = document.querySelector(".deg-tiempo");
+ let condicionCiudad = document.querySelector(".condicion-tiempo");
+ let humedadCiudad = document.querySelector(".humedad");
+ let fechadeHoy = document.querySelector(".info-fecha");
 
  function addDataToDom(data) {
     nombreCiudad.innerHTML = `${data.name}, ${data.sys.country}`;
@@ -49,6 +49,6 @@ function fetchDataFromApi() {
 
  function getDate(){
     let nuevaFecha = new Date();
-    let meses = months[nuevaFecha.getMonth()];
+    let meses = meses[nuevaFecha.getMonth()];
     return `${nuevaFecha.getDate()} ${meses} ${nuevaFecha.getFullYear()}`;
  }
