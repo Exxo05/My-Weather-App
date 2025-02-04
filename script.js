@@ -49,6 +49,6 @@ function fetchDataFromApi() {
 
  function getDate(){
     let nuevaFecha = new Date();
-    let meses = meses[nuevaFecha.getMonth()];
-    return `${nuevaFecha.getDate()} ${meses} ${nuevaFecha.getFullYear()}`;
+    let mes = meses[nuevaFecha.getMonth()];
+    return `${nuevaFecha.getDate()} ${mes} ${nuevaFecha.getFullYear()}`;
  }
