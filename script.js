@@ -1,14 +1,31 @@
 let logotitulo = document.querySelector(".titulo");
 let elementoCuerpo = document.querySelector("body");
 
-window.addEventListener("load", () => {
-    let numeroRandom = Math.ceil(Math.random() * 5)
-    elementoCuerpo.style.backgroundImage = `url('IMAGENES/bg${numeroRandom}.jpg')`;
-    if (numeroRandom == 3 || numeroRandom == 4 || numeroRandom == 5) {
-        logotitulo.style.color = "white";
-    }
-});
+function cambiarFondoSegunClima(clima) {
+    let imagenFondo = "";
 
+    if (clima.includes("clear")) {
+        imagenFondo = "url('IMAGENES/soleado.jpg')"; 
+    } else if (clima.includes("rain")) {
+        imagenFondo = "url('IMAGENES/lluvia.jpg')"; 
+    } else if (clima.includes("clouds")) {
+        imagenFondo = "url('IMAGENES/nublado.jpg')"; 
+    } else if (clima.includes("snow")) {
+        imagenFondo = "url('IMAGENES/nieve.jpg')"; 
+    } else if (clima.includes("thunderstorm")) {
+        imagenFondo = "url('IMAGENES/tormenta.jpg')"; 
+    } else if (clima.includes("drizzle")) {
+        imagenFondo = "url('IMAGENES/llovizna.jpg')"; 
+    } else if (clima.includes("mist") || clima.includes("fog")) {
+        imagenFondo = "url('IMAGENES/niebla.jpg')";
+    } else {
+        imagenFondo = "url('IMAGENES/default.jpg')"; 
+    }
+
+    elementoCuerpo.style.backgroundImage = imagenFondo;
+    elementoCuerpo.style.backgroundSize = "cover";
+    
+}
 let putCiudad = document.querySelector("#ciudad");
 putCiudad.addEventListener("keypress", (event) => {
     if (event.key == "Enter") {
@@ -43,6 +60,7 @@ function fetchDataFromApi() {
     condicionCiudad.innerHTML = data.weather[0].description;
     humedadCiudad.innerHTML = `humidity: ${data.main.humidity}%`;
     fechadeHoy.innerHTML = getDate();
+    cambiarFondoSegunClima(data.weather[0].main.toLowerCase());
  }
 
  let meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
