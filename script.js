@@ -36,6 +36,7 @@ putCiudad.addEventListener("keypress", (event) => {
 let datosAPI = {
     url: "http://api.openweathermap.org/data/2.5/weather?q=",
     key: "7ea15b5ede189da436e9374f884ca5b7",
+    lang: "es"
 };
 
 putCiudad.value = "Madrid";
@@ -44,7 +45,7 @@ putCiudad.value = "";
 
 function fetchDataFromApi() {
     let ciudadSeleccionada = putCiudad.value;
-    fetch((`${datosAPI.url}${ciudadSeleccionada}&appid=${datosAPI.key}`))
+    fetch((`${datosAPI.url}${ciudadSeleccionada}&appid=${datosAPI.key}&lang=es`))
     .then((res) => res.json())
     .then((data) => addDataToDom(data));
 }
@@ -58,7 +59,7 @@ function fetchDataFromApi() {
     nombreCiudad.innerHTML = `${data.name}, ${data.sys.country}`;
     temperaturaCiudad.innerHTML = `${Math.round(data.main.temp - 273.15)}ºc`;
     condicionCiudad.innerHTML = data.weather[0].description;
-    humedadCiudad.innerHTML = `humidity: ${data.main.humidity}%`;
+    humedadCiudad.innerHTML = `humedad: ${data.main.humidity}%`;
     fechadeHoy.innerHTML = getDate();
     cambiarFondoSegunClima(data.weather[0].main.toLowerCase());
  }
