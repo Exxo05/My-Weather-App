@@ -1,4 +1,4 @@
 ## My-Weather-App
-- Voy a crear un proyecto de una app web del tiempo. Consistira en un buscador donde se pondra una ciudad y te devolvera el tiempo de esa ciudad.
+- Este es un proyecto de una app web del tiempo. Consiste en un buscador donde se pondra una ciudad y te devolvera el tiempo de esa ciudad. Tambien dependiendo del tiempo te saldra una imagen relacionada a ese tiempo. Si llueve, saldra una imagen lloviendo.
 ## Lenguajes y programas utilizados
 - HTML, CSS, JavaScript y WeatherAPI
