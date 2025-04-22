@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta  charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <link rel="icon" href="IMAGENES/weather.png" type="image/png" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>La APP del Tiempo</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-             <h1 class="titulo"><img class="icono-clima" src="IMAGENES/weather.png" alt="logo clima" />APP del Clima</h1>
-             <input id="ciudad" type="text" placeholder="Busca la ciudad aqui">
-        </header>
-        <main>
-            <div class="informacion">
-                <h3 class="nombre-ciudad"></h3>
-                <p class="info-fecha"><span class="dia"></span><span class="fecha"></span></p>
-                <h2 class="deg-tiempo"></h2>
-                <h3 class="condicion-tiempo"></h3>
-                <h3 class="humedad"></h3>
-            </div>
-        </main>
-        <script src="script.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="IMAGENES/weather.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La APP del Tiempo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">
+            <img class="icono-clima" src="IMAGENES/weather.png" alt="logo clima" />
+            APP del Clima
+        </h1>
+        <input id="ciudad" type="text" placeholder="Busca la ciudad aqui">
+    </header>
+    <main>
+        <div class="informacion">
+            <h3 class="nombre-ciudad"></h3>
+            <p class="info-fecha"><span class="dia"></span><span class="fecha"></span></p>
+            <h2 class="deg-tiempo"></h2>
+            <h3 class="condicion-tiempo"></h3>
+            <h3 class="humedad"></h3>
+        </div>
+
+        <!-- Nueva sección de pronóstico -->
+        <section class="pronostico">
+            <h3>Próximos 5 días</h3>
+            <div class="dias-pronostico"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
 </html>
