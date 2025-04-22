@@ -37,7 +37,7 @@ Aquí puedes ver cómo luce la aplicación:
 ## 🚧 Futuras Actualizaciones
 Estas son algunas de las características que planeo añadir próximamente a la aplicación:
 
-- 🌦️ **Previsión para los próximos días**: Verás la predicción del clima para los próximos días, no solo el clima actual.
+- 🌦️ **Previsión para los próximos días**: Verás la predicción del clima para los próximos días, no solo el clima actual. (ACTUALIZADO)
 - 🌈 **Consejos y actividades según el clima**: Dependiendo del tiempo, la aplicación sugerirá actividades al aire libre si está soleado o opciones para disfrutar en casa si está lloviendo.
 - 🏞️ **Recomendaciones personalizadas**: Basado en el clima, ofreceré recomendaciones sobre qué hacer. Por ejemplo, si hace buen tiempo, sugeriré caminar al aire libre; si está lloviendo, sugeriré opciones para quedarte en casa.
 - ⭐ **Ciudades Favoritas**: Podrás guardar tus ciudades favoritas para acceder rápidamente a su clima en cualquier momento sin necesidad de buscarlas cada vez.
