@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
 
-
 * {
     padding: 0;
     margin: 0;
@@ -26,6 +25,7 @@ header .titulo {
     text-align: center;
     text-shadow: 0 0 50px black;
 }
+
 header .icono-clima {
     width: 60px;
     margin-bottom: -20px;
@@ -78,4 +78,41 @@ main .informacion {
 .condicion-tiempo {
     margin-bottom: 20px;
 }
+
+/* Estilos del pronóstico */
+.pronostico {
+    max-width: 90%;
+    margin: 40px auto;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px black;
+    color: black;
+    text-shadow: 0 0 0px;
+}
+
+.dias-pronostico {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.dia {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(6px);
+    border-radius: 15px;
+    padding: 10px;
+    min-width: 100px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 0px;
+    color: black;
+}
+
+.dia img {
+    width: 50px;
+    height: 50px;
+}
+
+
 
