@@ -35,7 +35,7 @@ putCiudad.addEventListener("keypress", (event) => {
 
 let datosAPI = {
     url: "http://api.openweathermap.org/data/2.5/weather?q=",
-    key: "7ea15b5ede189da436e9374f884ca5b7",
+    key: "1234567890abcdefg",
     lang: "es"
 };
 
