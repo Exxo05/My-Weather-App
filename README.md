@@ -19,7 +19,7 @@ Esta aplicación está construida con las siguientes tecnologías:
 - **WeatherAPI** - API para obtener los datos meteorológicos en tiempo real. [**Weather API**](https://openweathermap.org/api)
 
 ## 📷 Captura de Pantalla
-Aquí puedes ver cómo luce la aplicación:
+Aquí puedes ver cómo es la aplicación:
 
 ![App Screenshot](https://github.com/user-attachments/assets/b3c0e0fa-2a99-487c-b6fb-acc738c31f48)
 
