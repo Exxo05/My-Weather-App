@@ -45,6 +45,62 @@ header #ciudad {
     box-shadow: 0 8px 32px 0 rgba(31, 31, 31, 0.37);
 }
 
+/* API Key Section Styles */
+.api-key-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.api-key-section input[type="text"] {
+    width: 250px; /* Adjusted width */
+    height: 40px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    outline: none;
+    text-align: center;
+}
+
+.api-key-section button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #5cb85c; /* Green color for save */
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.api-key-section button:hover {
+    background-color: #4cae4c;
+}
+
+#apiKeyMessage {
+    margin-top: 5px;
+    font-size: 14px;
+    min-height: 20px; /* Reserve space for message */
+}
+
+#apiKeyMessage.success {
+    color: green;
+    font-weight: bold;
+}
+
+#apiKeyMessage.error {
+    color: red;
+    font-weight: bold;
+}
+
+#apiKeyMessage.info {
+    color: #31708f; /* Bootstrap info color */
+}
+
+
 main .informacion {
     background: rgba(255,255,255,0.2);
     box-shadow: 0 8px 32px 0 rgba(31, 31, 31, 0.37);
@@ -71,8 +127,32 @@ main .informacion {
 
 .deg-tiempo {
     font-size: 80px;
+    /* margin-top: 20px; /* Adjusted by container */
+    /* margin-bottom: 40px; /* Adjusted by container */
+}
+
+.temp-container {
+    display: flex;
+    flex-direction: column; /* Stack temp and button vertically */
+    align-items: center;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px; /* Reduced bottom margin */
+}
+
+#unitToggleBtn {
+    padding: 5px 10px;
+    font-size: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    margin-top: 5px; /* Space between temp and button */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#unitToggleBtn:hover {
+    background-color: #e0e0e0;
 }
 
 .condicion-tiempo {
@@ -112,6 +192,32 @@ main .informacion {
 .dia img {
     width: 50px;
     height: 50px;
+}
+
+/* Loading Indicator Styles */
+#loadingIndicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 100; /* Ensure it's on top */
+    display: none; /* Hidden by default */
+}
+
+/* Error Message Styles */
+#errorMessage {
+    color: red;
+    background-color: rgba(255, 200, 200, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    display: none; /* Hidden by default */
 }
 
 
