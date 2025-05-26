@@ -15,29 +15,16 @@
             APP del Clima
         </h1>
         <input id="ciudad" type="text" placeholder="Busca la ciudad aqui">
-        <div class="api-key-section">
-            <input type="text" id="apiKey" placeholder="Enter your OpenWeatherMap API Key">
-            <button id="saveApiKey">Save Key</button>
-            <p id="apiKeyMessage"></p>
-        </div>
     </header>
     <main>
         <div class="informacion">
-            <div id="loadingIndicator" style="display: none;">Loading...</div>
-            <div id="errorMessage" class="error-message" style="display: none;"></div>
-            <div id="loadingIndicator" style="display: none;">Loading...</div>
-            <div id="errorMessage" class="error-message" style="display: none;"></div>
             <h3 class="nombre-ciudad"></h3>
             <p class="info-fecha"><span class="dia"></span><span class="fecha"></span></p>
-            <div class="temp-container">
-                <h2 class="deg-tiempo"></h2>
-                <button id="unitToggleBtn"></button>
-            </div>
+            <h2 class="deg-tiempo"></h2>
             <h3 class="condicion-tiempo"></h3>
             <h3 class="humedad"></h3>
         </div>
 
-        <!-- Nueva sección de pronóstico -->
         <section class="pronostico">
             <h3>Próximos 5 días</h3>
             <div class="dias-pronostico"></div>
