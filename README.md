@@ -34,7 +34,6 @@ Aquí puedes ver cómo se ve la aplicación:
     url: "https://api.openweathermap.org/data/2.5/weather?q=",
     key: "1234567890abcdefgh",
     lang: "es"
-};
 4. Disfruta de la app
 
 
