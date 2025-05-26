@@ -6,22 +6,30 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    height: 100%;
     font-family: Funnel, sans-serif;
+}
+
+body {
     background-image: url("IMAGENES/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 70%;
-    height: 100vh;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    align-items: center;
 }
 
 header .titulo {
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center;
     text-shadow: 0 0 50px black;
 }
@@ -33,73 +41,25 @@ header .icono-clima {
 }
 
 header #ciudad {
-    width: 200px;
-    position: relative;
-    margin: auto;
-    margin-top: 50px;
+    width: 80%;
+    max-width: 300px;
+    margin-top: 20px;
     height: 50px;
     border: none;
     border-radius: 10px;
     padding: 0 10px;
     outline: none;
     box-shadow: 0 8px 32px 0 rgba(31, 31, 31, 0.37);
-}
-
-/* API Key Section Styles */
-.api-key-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 15px;
-    gap: 10px;
-}
-
-.api-key-section input[type="text"] {
-    width: 250px; /* Adjusted width */
-    height: 40px;
-    padding: 0 10px;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-    outline: none;
     text-align: center;
 }
 
-.api-key-section button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 8px;
-    background-color: #5cb85c; /* Green color for save */
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
 }
-
-.api-key-section button:hover {
-    background-color: #4cae4c;
-}
-
-#apiKeyMessage {
-    margin-top: 5px;
-    font-size: 14px;
-    min-height: 20px; /* Reserve space for message */
-}
-
-#apiKeyMessage.success {
-    color: green;
-    font-weight: bold;
-}
-
-#apiKeyMessage.error {
-    color: red;
-    font-weight: bold;
-}
-
-#apiKeyMessage.info {
-    color: #31708f; /* Bootstrap info color */
-}
-
 
 main .informacion {
     background: rgba(255,255,255,0.2);
@@ -107,16 +67,11 @@ main .informacion {
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
     border-radius: 20px;
-    max-width: 300px;
+    width: 90%;
+    max-width: 320px;
     min-height: 380px;
-    position: relative;
-    margin: auto;
     margin-top: 30px;
     padding: 20px;
-    text-align: center;
-}
-
-#ciudad {
     text-align: center;
 }
 
@@ -126,33 +81,9 @@ main .informacion {
 }
 
 .deg-tiempo {
-    font-size: 80px;
-    /* margin-top: 20px; /* Adjusted by container */
-    /* margin-bottom: 40px; /* Adjusted by container */
-}
-
-.temp-container {
-    display: flex;
-    flex-direction: column; /* Stack temp and button vertically */
-    align-items: center;
+    font-size: 70px;
     margin-top: 20px;
-    margin-bottom: 20px; /* Reduced bottom margin */
-}
-
-#unitToggleBtn {
-    padding: 5px 10px;
-    font-size: 0.8em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f0f0f0;
-    color: #333;
-    cursor: pointer;
-    margin-top: 5px; /* Space between temp and button */
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-
-#unitToggleBtn:hover {
-    background-color: #e0e0e0;
+    margin-bottom: 40px;
 }
 
 .condicion-tiempo {
@@ -161,21 +92,22 @@ main .informacion {
 
 /* Estilos del pronóstico */
 .pronostico {
-    max-width: 90%;
-    margin: 40px auto;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 40px;
+    padding: 0 10px;
     text-align: center;
-    color: white;
-    text-shadow: 0 0 10px black;
     color: black;
-    text-shadow: 0 0 0px;
 }
 
 .dias-pronostico {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     flex-wrap: wrap;
     margin-top: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
 }
 
 .dia {
@@ -183,10 +115,12 @@ main .informacion {
     backdrop-filter: blur(6px);
     border-radius: 15px;
     padding: 10px;
-    min-width: 100px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
-    text-shadow: 0 0 0px;
+    min-width: 120px;
+    text-align: center;
     color: black;
+    text-shadow: none;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    flex-shrink: 0;
 }
 
 .dia img {
@@ -194,31 +128,8 @@ main .informacion {
     height: 50px;
 }
 
-/* Loading Indicator Styles */
-#loadingIndicator {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.2em;
-    color: #fff;
-    background-color: rgba(0,0,0,0.7);
-    padding: 10px 20px;
-    border-radius: 5px;
-    z-index: 100; /* Ensure it's on top */
-    display: none; /* Hidden by default */
-}
 
-/* Error Message Styles */
-#errorMessage {
-    color: red;
-    background-color: rgba(255, 200, 200, 0.9);
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-    text-align: center;
-    display: none; /* Hidden by default */
-}
+
 
 
 
