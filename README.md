@@ -21,7 +21,7 @@ Esta aplicación está construida con las siguientes tecnologías:
 ## 📷 Captura de Pantalla
 Aquí puedes ver cómo se ve la aplicación:
 
-![App Screenshot](https://github.com/user-attachments/assets/b3c0e0fa-2a99-487c-b6fb-acc738c31f48)
+![Captura de pantalla](https://github.com/user-attachments/assets/b250aa26-c1a3-48f9-a01e-70f8e8cb7b08)
 
 ## 🚀 ¿Cómo Ejecutar el Proyecto?
 1. Clona el repositorio en tu máquina local:
