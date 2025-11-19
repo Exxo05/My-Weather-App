@@ -1,11 +1,74 @@
-Copyright (c) 2025 Exxo05
+Licencia de Uso de Software (Propietaria)
 
-All Rights Reserved.
+Copyright © 2025 Exxo05. Todos los derechos reservados.
 
-Este software y su código fuente son propiedad exclusiva del autor.
-No se permite su copia, modificación, distribución o uso con fines comerciales o no comerciales sin autorización expresa por escrito.
+1. Objeto de la Licencia
 
-Se autoriza la visualización del código con fines educativos o de evaluación.
-Las contribuciones o mejoras deberán ser propuestas mediante solicitudes (pull requests) y quedarán bajo la propiedad del autor original una vez aceptadas.
+Este documento regula el uso del software y su código fuente (en adelante, “el Software”), cuyo titular exclusivo es Exxo05 (en adelante, “el Autor”).
+La descarga, acceso, instalación, ejecución o visualización del Software implica la aceptación plena de esta licencia.
 
-Para obtener permiso de uso o redistribución, contacta al autor.
+2. Derechos Concedidos
+
+El Autor concede al usuario una licencia limitada, no exclusiva, intransferible y revocable únicamente para:
+
+Visualizar el código fuente con fines educativos, de estudio o evaluación.
+
+Ejecutar el Software exclusivamente para dichos fines.
+
+No se concede ningún derecho adicional salvo los expresamente enumerados.
+
+3. Restricciones
+
+Queda estrictamente prohibido, sin autorización previa y expresa por escrito del Autor:
+
+Copiar total o parcialmente el Software o su código fuente.
+
+Modificar, descompilar, desensamblar, realizar ingeniería inversa o crear obras derivadas.
+
+Distribuir, publicar, sublicenciar, vender, prestar o poner a disposición de terceros el Software, por cualquier medio.
+
+Usar el Software con fines comerciales o no comerciales que excedan la mera visualización o evaluación.
+
+Eliminar avisos de copyright u otra información de propiedad.
+
+Cualquier uso no permitido automáticamente queda prohibido.
+
+4. Contribuciones
+
+Si un usuario envía ideas, sugerencias, mejoras o contribuciones (incluyendo código) mediante solicitudes formales, el usuario declara y garantiza:
+
+Que la contribución es original o tiene derecho a enviarla.
+
+Que concede al Autor una cesión irrevocable, mundial, no exclusiva y perpetua para usar, modificar, incorporar, licenciar y distribuir dicha contribución.
+
+Las contribuciones aceptadas pasan a formar parte del Software y permanecen bajo la titularidad exclusiva del Autor.
+
+5. Propiedad Intelectual
+
+El Software es propiedad exclusiva del Autor.
+No se transfiere ningún derecho de propiedad intelectual al usuario por medio de esta licencia.
+
+6. Exención de Garantías
+
+El Software se proporciona “tal cual” (“AS IS”), sin garantías de ningún tipo, expresas o implícitas, incluyendo, entre otras, garantías de comerciabilidad, idoneidad para un propósito particular, ausencia de errores o no infracción.
+
+El usuario asume todo riesgo derivado del uso o imposibilidad de uso del Software.
+
+7. Limitación de Responsabilidad
+
+En ningún caso el Autor será responsable por daños directos, indirectos, incidentales, especiales, ejemplares o consecuenciales derivados del uso o incapacidad de uso del Software, incluso si ha sido advertido de la posibilidad de tales daños.
+
+8. Terminación
+
+Esta licencia se rescindirá automáticamente si el usuario incumple cualquiera de sus términos.
+Tras la terminación, el usuario deberá cesar todo uso del Software y destruir cualquier copia que posea.
+
+9. Solicitudes de Permiso
+
+Para obtener una licencia adicional (comercial, de redistribución, modificación, integración u otra), contactar directamente al Autor.
+
+10. Jurisdicción y Ley Aplicable
+
+Este contrato se regirá e interpretará conforme a la legislación que el Autor designe.
+Si no se especifica, se aplicará la legislación del país de residencia del Autor.
+Cualquier conflicto será resuelto en los tribunales competentes de dicha jurisdicción.
